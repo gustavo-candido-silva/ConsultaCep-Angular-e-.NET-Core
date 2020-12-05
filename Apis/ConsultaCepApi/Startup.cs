@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ConsultaCepApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -17,7 +18,9 @@ namespace ConsultaCepApi
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+
+          Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -26,6 +29,11 @@ namespace ConsultaCepApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddOptions();
+
+            // adiciono a configuracao de usuario salva no json para que possa ser acessado
+            services.Configure<Usuario>(Configuration.GetSection("usuarioAutorizado"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

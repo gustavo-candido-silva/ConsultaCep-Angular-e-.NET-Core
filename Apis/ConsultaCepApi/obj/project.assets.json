@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\OneDrive\\Documentos\\Desafios\\Angular_NET_Core\\ConsultaCep\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
       "projectName": "ConsultaCepApi",
-      "projectPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
+      "projectPath": "C:\\Users\\gusta\\OneDrive\\Documentos\\Desafios\\Angular_NET_Core\\ConsultaCep\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
       "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\obj\\",
+      "outputPath": "C:\\Users\\gusta\\OneDrive\\Documentos\\Desafios\\Angular_NET_Core\\ConsultaCep\\Apis\\ConsultaCepApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,7 +32,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -44,7 +43,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -63,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

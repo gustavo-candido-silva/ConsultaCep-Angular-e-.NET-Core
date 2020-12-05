@@ -1,18 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace ConsultaCepApi.Models
 {
   public class Endereco
   {
-    public string txCep { get; set; }
-    public string txLogradouro { get; set; }
-    public string txNumero { get; set; }
-    public string txComplemento { get; set; }
-    public string txBairro { get; set; }
-    public string txCidade { get; set; }
-    public string txEstado { get; set; }
+    public string cep { get; set; }
+    public string logradouro { get; set; }
+    public string complemento { get; set; }
+    public string bairro { get; set; }
+    public string localidade { get; set; }
+    public string uf { get; set; }
+    public string ibge { get; set; }
+    public string gia { get; set; }
+    public string ddd { get; set; }
+    public string siafi { get; set; }
   }
 }
