@@ -12,6 +12,7 @@ export class ConsultaPageComponent implements OnInit {
 
   public consultaForm: FormGroup | any;
   public txendereco = '';
+  public errorMessage = '';
 
   constructor(private fb: FormBuilder, 
               private consultaService : ConsultaPageService) { 
@@ -28,21 +29,32 @@ export class ConsultaPageComponent implements OnInit {
   }
 
   consultaSubmit(){
-    this.consultarCep(this.consultaForm?.value.txCep); 
+
+    var cep = this.consultaForm?.value.txCep;
+
+        cep = cep.replace('-','');
+
+    this.consultarCep(cep); 
+
   }
 
   consultarCep(txCep: string){
 
     this.txendereco = '';
+    this.errorMessage = '';
 
-    this.consultaService.getEndereco(txCep).subscribe(
-      (endereco: Endereco) => {
-        this.txendereco = `O endereço é ${endereco.logradouro}, ${endereco.complemento}, ${endereco.bairro}, ${endereco.localidade} - ${endereco.uf}`;
-      },
-      (erro: any) => {
-        console.error(erro);
-      }
-    );
+    if(txCep.length == 8){
+      this.consultaService.getEndereco(txCep).subscribe(
+        (endereco: Endereco) => {
+          this.txendereco = `O endereço é ${endereco.logradouro}, ${endereco.complemento}, ${endereco.bairro}, ${endereco.localidade} - ${endereco.uf}`;
+        },
+        (erro: any) => {
+          console.error(erro);
+        }
+      );
+    }else{
+      this.errorMessage = 'CEP inválido!';
+    }
   }
 
 

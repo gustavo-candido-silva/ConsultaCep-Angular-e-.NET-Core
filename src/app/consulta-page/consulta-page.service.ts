@@ -13,6 +13,9 @@ export class ConsultaPageService {
 
   constructor(private http: HttpClient) { }
 
+
+
+  
   getEndereco(txCep: string) : Observable<Endereco>{
 
     return this.http.get<Endereco>(`${this.baseUrl}/consultar/?txCep=${txCep}`);

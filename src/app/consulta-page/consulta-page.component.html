@@ -1,4 +1,4 @@
-<div class="card" style="width:18rem;" style="position: absolute; top:50%; left: 50%;" >
+<div class="card" style="width:18rem;" style="position: absolute; top:37%; left: 37%;" >
     <h5 class="card-header">Consulta de Cep</h5>
     <div class="card-body">
         <form [formGroup] = consultaForm (submit)="consultaSubmit()">
@@ -6,20 +6,22 @@
                 <div class="form-group mb-2">
                     <label for="txCep">Número do Cep</label>
                     <br>
-                    <input type="text"  formControlName="txCep" class="form-control" id="txCep" style="width:10rem;">
+                    <input type="text" formControlName="txCep" class="form-control" id="txCep" style="width:10rem;">
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
                     <button type="button" class="btn btn-primary" type="submit">Consultar</button>
                 </div>
             </div>
             <div class="form-group">
-                <small id="CepHelp" class="form-text text-muted">O Número do Cep possui oito(8) dígitos no formato 99999-999.</small>
+                <small id="CepHelp" class="form-text text-muted">O Número do Cep possui oito(8) dígitos no formato 99999-999 ou 99999999.</small>
             </div>
             <div class="form-group">
-                <p>
+                <div class="alert alert-danger" role="alert" *ngIf="errorMessage">
+                    {{errorMessage}}
+                </div>
+                <p *ngIf="!errorMessage">
                     {{txendereco}}
                 </p>
-            
             </div>
             
         </form>
