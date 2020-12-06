@@ -1,5 +1,6 @@
 <div class="card" style="width:18rem;" style="position: absolute; top:37%; left: 37%;" >
-    <h5 class="card-header">Consulta de Cep</h5>
+    <h5 class="card-header">Consulta de Cep</h5> 
+    <h6 class="card-header">Usuário: {{user}}</h6> 
     <div class="card-body">
         <form [formGroup] = consultaForm (submit)="consultaSubmit()">
             <div class="form-inline">
@@ -9,7 +10,7 @@
                     <input type="text" formControlName="txCep" class="form-control" id="txCep" style="width:10rem;">
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
-                    <button type="button" class="btn btn-primary" type="submit">Consultar</button>
+                    <button class="btn btn-success" type="submit">Consultar</button>
                 </div>
             </div>
             <div class="form-group">
@@ -25,5 +26,10 @@
             </div>
             
         </form>
+    </div>
+    <div class="card-footer">
+        <div style="text-align: right;">
+            <button type="button" class="btn btn-danger" type="button" (click)="logout()" >Sair</button>
         </div>
+    </div>
 </div>

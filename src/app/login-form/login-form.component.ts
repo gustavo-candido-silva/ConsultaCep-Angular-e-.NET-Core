@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Usuario } from '../models/usuario';
 import { LoginFormService } from './login-form.service';
-import { Route, Router } from '@angular/router'
+import { Router } from '@angular/router'
+import { AuthService } from '../guards/auth.service'  
 
 @Component({
   selector: 'app-login-form',
@@ -18,11 +19,20 @@ export class LoginFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private loginService : LoginFormService,
-              private router: Router) { 
+              private router: Router,
+              private auth: AuthService 
+              ) { 
                 this.criarForm();
               }
 
   ngOnInit(): void {
+    this.auth.logout();  
+    
+    if(localStorage.getItem('bypass') == 'true' ){
+      this.errorMessage = 'Para acessar é necessário entrar com usuário';
+      localStorage.setItem('bypass', 'false'); 
+    }
+
   }
 
 criarForm(){
@@ -48,6 +58,8 @@ logar(){
 
     this.loginService.postLogin(this.usuario).subscribe(
       (usuario: Usuario) => {
+        localStorage.setItem('isLoggedIn', 'true');  
+        localStorage.setItem('user', usuario.txUserName); 
         this.router.navigate(['cep']);
       },
 

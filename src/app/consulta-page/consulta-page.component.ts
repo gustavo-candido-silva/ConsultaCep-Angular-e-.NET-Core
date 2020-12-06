@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Endereco } from "../models/endereco";
 import { ConsultaPageService } from './consulta-page.service';
+import { AuthService } from '../guards/auth.service'; 
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-consulta-page',
@@ -13,13 +15,22 @@ export class ConsultaPageComponent implements OnInit {
   public consultaForm: FormGroup | any;
   public txendereco = '';
   public errorMessage = '';
+  public user = localStorage.getItem('user');
 
   constructor(private fb: FormBuilder, 
-              private consultaService : ConsultaPageService) { 
+              private consultaService : ConsultaPageService,
+              private router: Router,
+              ) { 
                 this.criarForm();
               }
 
   ngOnInit(): void {
+
+    if(localStorage.getItem('isLoggedIn') == 'false'){
+      localStorage.setItem('bypass', 'true'); 
+      this.router.navigate(['']);
+    }
+
   }
 
   criarForm(){
@@ -57,6 +68,8 @@ export class ConsultaPageComponent implements OnInit {
     }
   }
 
-
+ logout(){
+   this.router.navigate(['']);
+ }
 
 }
