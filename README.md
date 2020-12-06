@@ -11,8 +11,8 @@ Abra outra instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-
 Feito estes dois passos o teste pode ser realizado pelo próprio navegador. 
 Para entrar na pagina de consulta de CEP é necessário o usuário cadastrado na aplicação de backend:
 
-*Usuário: gustavo.cep*
-*Senha: 12345*
+**Usuário: gustavo.cep**
+**Senha: 12345**
 
 ## Requisitos:
 
