@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: "http://localhost:5000/"
+  cepApiBaseUrl: "http://localhost:5000/api/cep",
+  loginApiBaseUrl: "http://localhost:5000/api/login"
 }
 /*
  * For easier debugging in development mode, you can import the following file

@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -8,11 +7,14 @@ import { environment } from 'src/environments/environment';
 })
 export class ConsultaPageService {
 
-  baseUrl = environment.apiBaseUrl;
+  baseUrl = environment.cepApiBaseUrl;
 
   constructor(private http: HttpClient) { }
 
   getEndereco(txCep: string){
-    return this.http.get(this.baseUrl+"/${id}");
+
+    return this.http.get(this.baseUrl+'/consultar/${id}');
+
   }
+
 }
