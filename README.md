@@ -12,8 +12,8 @@ Feito estes dois passos o teste pode ser realizado pelo próprio navegador.
 
 ## Requisitos:
 
-* Ter instalado em sua maquina Angular CLI version 11.0.3.
-* Ter instalado em sua maquina .NET Core 3.1 ou superior
+* Ter instalado em sua máquina Angular CLI version 11.0.3.
+* Ter instalado em sua máquina .NET Core 3.1 ou superior
 
 # Readme gerado automaticamente pelo Angular
 # ConsultaCep 
