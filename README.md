@@ -1,4 +1,17 @@
-# ConsultaCep
+# Para executar as aplicações
+
+Em sua máquina, execute um `git clone` com o git em uma pasta de sua preferência, ou baixe e extraia o projeto nesta pasta.
+
+Abra uma instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core\Apis\ConsultaCepApi" (local onde estará a API de backend
+do projeto) e execute o comando `dotnet run` este comando iniciará um server para hospedar a API que responderá o projeto em Angular.
+
+Abra outra instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core" (local onde estará todo o projeto) e execute o comando
+`npm start` este comando iniciará um server para hospedar o projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
+
+Feito estes dois passos o teste pode ser realizado pelo próprio navegador 
+
+# Readme gerado automaticamente pelo Angular
+# ConsultaCep 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
