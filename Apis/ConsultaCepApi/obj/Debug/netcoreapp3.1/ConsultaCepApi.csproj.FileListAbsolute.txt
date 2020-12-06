@@ -36,3 +36,4 @@ C:\Users\gusta\OneDrive\Documentos\Desafios\Angular_NET_Core\ConsultaCep\Apis\Co
 C:\Users\gusta\OneDrive\Documentos\Desafios\Angular_NET_Core\ConsultaCep\Apis\ConsultaCepApi\obj\Debug\netcoreapp3.1\ConsultaCepApi.dll
 C:\Users\gusta\OneDrive\Documentos\Desafios\Angular_NET_Core\ConsultaCep\Apis\ConsultaCepApi\obj\Debug\netcoreapp3.1\ConsultaCepApi.pdb
 C:\Users\gusta\OneDrive\Documentos\Desafios\Angular_NET_Core\ConsultaCep\Apis\ConsultaCepApi\obj\Debug\netcoreapp3.1\ConsultaCepApi.genruntimeconfig.cache
+D:\Documentos\Desafios\Angular\ConsultaCep-Angular-.NET-Core\apis\ConsultaCepApi\obj\Debug\netcoreapp3.1\ConsultaCepApi.csprojAssemblyReference.cache

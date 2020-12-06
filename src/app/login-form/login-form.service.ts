@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { Usuario } from '../models/usuario';
 
 @Injectable({
   providedIn: 'root'
@@ -11,10 +13,9 @@ export class LoginFormService {
 
   constructor(private http: HttpClient) { }
 
-  postLogin(txUserName: string, txSenha:string){
+  postLogin(usuario : Usuario) : Observable<Usuario>{
 
-    var body = JSON.parse('{"txUserName":"'+txUserName+'","txSenha":"'+txSenha+'"}')
-    return this.http.post(this.baseUrl+'/logar', body)
+    return this.http.post<Usuario>(`${this.baseUrl}/logar`, usuario)
     
   }
   
