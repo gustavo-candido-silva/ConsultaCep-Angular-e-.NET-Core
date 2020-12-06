@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OVn+4MfazniMEXb0PkJcq9dqNDVZpcN8mT2vwaPgZu8l8o10PdMUQtpEvY9OhevxVWzh+BsaOsD1nVG1Gz3rww==",
+  "dgSpecHash": "k8jF3Z3wJv354HByPVw65ScxAXo5MoCEB0wAtfHXGT8L0Da3muXeoM2YNOSGWMQUSD9qKhoursZx7lMHs8KPfQ==",
   "success": true,
-  "projectFilePath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
+  "projectFilePath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

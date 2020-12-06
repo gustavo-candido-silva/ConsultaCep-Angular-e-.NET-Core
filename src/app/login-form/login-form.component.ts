@@ -49,7 +49,7 @@ logar(){
   this.errorMessage = '';
 
   if(this.usuario.txUserName == '' && this.usuario.txSenha == ''){
-    this.errorMessage = 'O campo Usuário e Senha não podem estar vazio';
+    this.errorMessage = 'O campo Usuário e Senha não podem estar vazios';
   }else if(this.usuario.txUserName == ''){
     this.errorMessage = 'O campo Usuário não pode estar vazio';
   }else if(this.usuario.txSenha == ''){

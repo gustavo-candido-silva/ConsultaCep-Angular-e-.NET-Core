@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\ConsultaCepApi.csproj": {}
+    "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\ConsultaCepApi.csproj": {
+    "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
+        "projectUniqueName": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
         "projectName": "ConsultaCepApi",
-        "projectPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
+        "projectPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\ConsultaCepApi.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\apis\\ConsultaCepApi\\obj\\",
+        "outputPath": "D:\\Documentos\\Desafios\\Angular\\ConsultaCep-Angular-.NET-Core\\Apis\\ConsultaCepApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,9 +6,14 @@ Abra uma instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Co
 do projeto) e execute o comando `dotnet run` este comando iniciará um server para hospedar a API que responderá o projeto em Angular.
 
 Abra outra instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core" (local onde estará todo o projeto) e execute o comando
-`npm start` este comando iniciará um server para hospedar o projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
+`npm start` este comando iniciará um server para hospedar ao projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
 
-Feito estes dois passos o teste pode ser realizado pelo próprio navegador 
+Feito estes dois passos o teste pode ser realizado pelo próprio navegador.
+
+## Requisitos:
+
+Ter instalado em sua maquina Angular CLI version 11.0.3.
+Ter instalado em sua maquina .NET Core 3.1 ou superior
 
 # Readme gerado automaticamente pelo Angular
 # ConsultaCep 
