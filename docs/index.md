@@ -6,9 +6,11 @@ Abra uma instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Co
 do projeto) e execute o comando `dotnet run` este comando iniciará um server para hospedar a API que responderá o projeto em Angular.
 
 Abra outra instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core" (local onde estará todo o projeto) e execute o comando
-`npm start` este comando iniciará um server para hospedar ao projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
+`@angular-devkit/build-angular` para instalar os modulos de build do angular.
 
-Feito estes três passos o teste pode ser realizado pelo próprio navegador. 
+Após a instalação execute na mesma instância do terminal o comando `npm start` este comando iniciará um server para hospedar ao projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
+
+Feito estes quatro passos o teste pode ser realizado pelo próprio navegador. 
 Para entrar na pagina de consulta de CEP é necessário o usuário cadastrado na aplicação de backend:
 
 **Usuário: gustavo.cep**
