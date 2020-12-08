@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# Para executar as aplicações
 
-You can use the [editor on GitHub](https://github.com/gustavo-candido-silva/ConsultaCep-Angular-e-.NET-Core/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Em sua máquina, execute um `git clone` com o git em uma pasta de sua preferência, ou baixe e extraia o projeto nesta pasta.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Abra uma instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core\Apis\ConsultaCepApi" (local onde estará a API de backend
+do projeto) e execute o comando `dotnet run` este comando iniciará um server para hospedar a API que responderá o projeto em Angular.
 
-### Markdown
+Abra outra instância do Powershell ou cmd na pasta "./ConsultaCep-Angular-.NET-Core" (local onde estará todo o projeto) e execute o comando
+`npm start` este comando iniciará um server para hospedar ao projeto em Angular no endereço `http://localhost:4200/` que pode ser acessado pelo navegador.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Feito estes três passos o teste pode ser realizado pelo próprio navegador. 
+Para entrar na pagina de consulta de CEP é necessário o usuário cadastrado na aplicação de backend:
 
-```markdown
-Syntax highlighted code block
+**Usuário: gustavo.cep**
+**Senha: 12345**
 
-# Header 1
-## Header 2
-### Header 3
+## Requisitos:
 
-- Bulleted
-- List
+* Ter instalado em sua máquina Angular CLI version 11.0.3.
+* Ter instalado em sua máquina .NET Core 3.1 ou superior
 
-1. Numbered
-2. List
+# Readme gerado automaticamente pelo Angular
+# ConsultaCep 
 
-**Bold** and _Italic_ and `Code` text
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
-[Link](url) and ![Image](src)
-```
+## Development server
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Jekyll Themes
+## Code scaffolding
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gustavo-candido-silva/ConsultaCep-Angular-e-.NET-Core/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Support or Contact
+## Build
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
